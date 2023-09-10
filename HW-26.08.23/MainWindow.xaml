@@ -1,0 +1,77 @@
+﻿<Window x:Class="HW_26._08._23.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_26._08._23"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="900" Background="Black">
+    <Grid Height="400" Width="750">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="Gray" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid Height="380" Width="730" Background="Brown">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" >
+                    <Button Content="" Background="Blue" Margin="5"/>
+                    <Button Content="" Background="Blue" Margin="5 "/>
+                    <Button Content="" Background="Blue" Margin="5"/>
+                    <Button Content="1" Background="Blue" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" >
+                    <Button Content="" Background="White" Margin="5"/>
+                    <Button Content="" Background="White" Margin="5"/>
+                    <Button Content="" Background="White" Margin="5"/>
+                    <Button Content="2" Background="White" Margin="5" />
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" >
+                    <Button Content="" Background="Green" Margin="5"/>
+                    <Button Content="3" Background="Green" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="1">
+                    <Button Content="6" Background="LightPink" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="1">
+                    <Button Content="9" Background="Gray" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" >
+                    <Button Content="" Background="Red" Margin="5"/>
+                    <Button Content="4" Background="red" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" >
+                    <Button Content="" Background="Orange" Margin="5"/>
+                    <Button Content="5" Background="Orange" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="2" Grid.RowSpan="2" >
+                    <Button Content="" Background="Yellow" Margin="5"/>
+                    <Button Content="7" Background="Yellow" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="4"  >
+                    <Button Content="8" Background="Pink" Margin="5"/>
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="4"  >
+                    <Button Content="10" Background="Purple" Margin="5"/>
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>
